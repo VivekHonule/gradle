@@ -42,6 +42,13 @@ Some plugins will break with this new version of Gradle, for example because the
 
 The `layout` method taking a configuration block has been removed and is replaced by link:{groovyDslPath}/org.gradle.api.artifacts.repositories.IvyArtifactRepository.html#org.gradle.api.artifacts.repositories.IvyArtifactRepository:patternLayout(org.gradle.api.Action)[patternLayout].
 
+==== Properties removed in Checkstyle and PMD plugins
+
+* The `configDir` getters and setters have been removed from the Checkstle task and extension.
+Use the `configDirectory` property instead.
+* The `rulePriority` getter and setter have been removed from the Pmd task and extension.
+Use the `rulesMinimumPriority` property instead.
+
 === Deprecations
 
 [[changes_6.8]]
